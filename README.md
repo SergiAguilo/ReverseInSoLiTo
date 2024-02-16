@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ## Download Database
 
 ```
-wget https://zenodo.org/api/records/10666656/files/databaseReverse.db.gz
+wget https://zenodo.org/api/records/10666656/files/databaseReverse.db.gz/content -O databaseReverse.db.gz
 gunzip databaseReverse.db.gz
 ```
 
