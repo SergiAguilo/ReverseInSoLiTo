@@ -27,7 +27,13 @@ app = Flask(__name__)
 @app.route('/search')
 def search():
     search_terms = request.args.getlist('tool')
-    results = databaseSearch(c, search_terms)
+    listPublication = databaseSearch(c, search_terms)
+    lenResults = len(listPublication)
+    results = {
+        "countPublications": lenResults,
+        "publications":listPublication
+        }
+
 
     return jsonify(results)
 
