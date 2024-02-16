@@ -25,6 +25,8 @@ wget https://zenodo.org/api/records/10666656/files/databaseReverse.db.gz
 gunzip databaseReverse.db.gz
 ```
 
+Also, you can create manually the database in [createDataset](./createDataset)
+
 
 ## Usage
 
